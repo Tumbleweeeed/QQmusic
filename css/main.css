@@ -16,7 +16,6 @@
 }
 
 .header-logo{
-	background:red;
 	position:absolute;
 	top:50%;
 	transform:translateY(-50%);
@@ -25,43 +24,88 @@
 }
 
 .header-nav{
-	background:#d31b4d;
 	position:absolute;
 	top:50%;
 	transform:translateY(-50%);
 	width:600px;
 	left:200px;
 	font-size:18px;
+	font-weight:300;
+	line-height:90px;
 }
 	.header-nav li{
 		display:block;
 		float:left;
-		padding:20px 30px;
+		height:90px;
+		top:20px;
+		padding:0 17px;
 	}
+		.header-nav li:first-child{
+			background:#31c27c;
+			color:#fff;
+		}
+		.header-nav a:hover{
+			color:#31c27c;
+		}
+		.header-leader{
+			color:#fff;
+		}
 
 .header-search{
-	background:#ac7e85;
 	position:absolute;
 	top:50%;
 	transform:translateY(-50%);
 	width:200px;
-	left:850px;
+	right:300px;
+	padding:1px;
+	border:1px solid #c9c9c9;
+	border-radius:4px;
 }
+	.header-search input{
+		line-height:36px;
+		height:32px;
+		width:160px;
+		border:0 none;
+		outline:none;
+		padding-left:12px;
+	}
 
 .header-log{
-	background:#b283f1;
 	position:absolute;
 	top:50%;
 	transform:translateY(-50%);
 	right:0;
 }
 	.header-log a{
-		display:block;
-		float:right;
+		display:inline-block;
 		font-size:14px;
 	}
 	.header-log a:first-child{
-		font-size:16px;
+		font-size:18px;
+		padding-right:30px;
+		font-weight:200;
+	}
+	.header-log a:first-child:hover{
+		color:#31c27c;
+	}
+	.header-log a:nth-child(2){
+		padding:7px;
+		margin-right:6px;
+		border:1px solid #c9c9c9;
+		border-radius:4px;
+		background:#31c27c;
+		color:#fff;
+	}
+	.header-log a:nth-child(2):hover{
+		background:#2caf6f;
+	}
+	.header-log a:nth-child(3){
+		padding:7px;
+		border:1px solid #c9c9c9;
+		border-radius:4px;
+	}
+	.header-log a:nth-child(3):hover{
+		background:#ededed;
 	}
 
 .header-bottom{
@@ -74,20 +118,37 @@
 }
 .header-navs-item{
 	display:inline-block;
+	padding:0 20px;
 }
-
+	.header-navs-item:first-child{
+		padding-left:0;
+		color:#31c27c;
+	}
+.header-navs-item a:hover{
+	color:#31c27c;
+}
+.navs-first{
+	color:#31c27c;
+}
 
 /*第一屏 歌单推荐*/
 .screen2{
 	position:relative;
+	background:#f6f6f6;
 }
 
 .songCmd{
-	background:red;
 	min-width:900px;
 	max-width:1200px;
 	margin:auto;
 	padding-bottom:20px;
+}
+
+.songCmd-nav{
+	margin:-6px 0 40px;
+}
+.songCmd-item{
+	padding:0 20px;
 }
 
 .songCmd-box{
@@ -99,7 +160,9 @@
 		position:relative;
 		width:1000%;
 	}
-			
+.a-color{
+	color:#31c27c;
+}	
 
 
 
@@ -341,3 +404,81 @@
 .MV-p-style{
 	padding-top:6px;
 }
+
+
+/*页尾*/
+.footer{
+	background:#353535;
+	color:#999;
+}
+.footer a{
+	color:#999;
+}
+
+.footer-inner{
+	min-width:900px;
+	max-width:1200px;
+	margin:0 auto;
+	font-weight:200;
+}
+.footer-inner h4{
+	font-weight:200;
+	font-size:20px;
+	text-align:left;
+	padding-bottom:20px;
+}
+.footer-inner li{
+	display:inline-block;
+	float:left;
+	font-size:12px;
+	text-align:left;
+	margin-bottom:20px;
+	padding-right:10px;
+}
+
+/*dowload*/
+.footer-dowload{
+	position:relative;
+	display:inline-block;
+	width:29%;
+	margin:70px 22px;
+	float:left;
+	text-align:center;
+
+}
+
+/*product*/
+.footer-product{
+	position:relative;
+	display:inline-block;
+	margin:70px 22px;
+	width:29%;
+	float:left;
+	text-align:center;
+}
+.footer-product li{
+}
+
+/*link*/
+.footer-link{
+	position:relative;
+	display:inline-block;
+	margin:70px 22px;
+	width:29%;
+	float:left;
+	text-align:center;
+}
+	.footer-link li{
+		width:30%;
+	}
+
+.footer-copyRight{
+	position:relative;
+	display:block;
+	clear:both;
+	text-align:center;
+	font-size:12px;
+}
+	.footer-copyRight p{
+		padding-bottom:20px;
+	}
