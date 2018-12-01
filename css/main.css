@@ -1,0 +1,343 @@
+
+
+/*导航栏*/
+.header{
+	min-width:900px;
+	max-width:1200px;
+	margin:auto;
+}
+
+
+
+.header-top{
+	position:relative;
+	width:100%;
+	height:90px;
+}
+
+.header-logo{
+	background:red;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:100px;
+	left:0;
+}
+
+.header-nav{
+	background:#d31b4d;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:600px;
+	left:200px;
+	font-size:18px;
+}
+	.header-nav li{
+		display:block;
+		float:left;
+		padding:20px 30px;
+	}
+
+.header-search{
+	background:#ac7e85;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:200px;
+	left:850px;
+}
+
+.header-log{
+	background:#b283f1;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	right:0;
+}
+	.header-log a{
+		display:block;
+		float:right;
+		font-size:14px;
+	}
+	.header-log a:first-child{
+		font-size:16px;
+	}
+
+.header-bottom{
+	height:52px;
+	text-align:center;
+	border-top:.5px solid rgba(0,0,0,.1);
+}
+.header-navs{
+	line-height:52px;
+}
+.header-navs-item{
+	display:inline-block;
+}
+
+
+/*第一屏 歌单推荐*/
+.screen2{
+	position:relative;
+}
+
+.songCmd{
+	background:red;
+	min-width:900px;
+	max-width:1200px;
+	margin:auto;
+	padding-bottom:20px;
+}
+
+.songCmd-box{
+	text-align:center;
+	height:310px;
+	overflow:hidden;
+}
+	.songCmd-list{
+		position:relative;
+		width:1000%;
+	}
+			
+
+
+
+
+/*新歌首发*/
+.newSong{
+	min-width:900px;
+	max-width:1200px;
+	margin:0 auto;
+	padding-bottom:20px;
+	background:green;
+}
+
+.newSong-other{
+	position:relative;
+	align-items:center;
+}
+
+.newSong-playAll{
+	position:absolute;
+	left:0;
+	display:inline-block;
+	float:left;
+	border:1px solid black;
+	padding:10px 15px;
+	top:-10px;
+}
+
+.newSong-box{
+	overflow:hidden;
+}
+.newSong-box-inner{
+	width:1000%;
+}
+.newSong-list{
+	display:inline-block;
+	width:10%;
+}
+
+
+
+
+/*精彩推荐*/
+.wonderful{
+	min-width:900px;
+	max-width:1200px;
+	margin:0 auto;
+	padding-bottom:20px;
+	background:#999;
+}
+
+.wonderful-box{
+	overflow:hidden;
+	padding-bottom:20px;
+}
+		.wonderful-img{
+			position:relative;
+			width:1000%;
+		}
+			.wonderful-img-item{
+				display:inline-block;
+				width:5%;
+				box-sizing:border-box;
+				padding-right:20px;
+			}
+				.wonderful-img-item img{
+					width:100%;
+				}
+
+
+
+
+/*新碟首发*/
+.newCD{
+	min-width:900px;
+	max-width:1200px;
+	margin:0 auto;
+	padding-bottom:20px;
+	background:#829;
+}
+
+.newCD-more{
+	position:relative;
+	display:inline-block;
+	float:right;
+}
+
+.newCD-box{
+	overflow:hidden;
+}
+	.newCD-box-inner{
+		position:relative;
+		width:1000%;
+	}
+		.newCD-list{
+			position:relative;
+			display:inline-block;
+			width:10%;
+		}
+
+.newCD-other{
+	width:19%;
+	margin-right:1%;
+	margin-bottom:1%;
+}			
+
+
+/*排行榜*/
+.rank{
+	min-width:900px;
+	max-width:1200px;
+	margin:0 auto;
+	position:relative;
+	height:660px;
+}
+
+.rank-more{
+	position:absolute;
+	right:0;
+	top:54px;
+}
+
+.rank-box{
+	position:relative;
+}
+
+.rank-list{
+	margin-right:-20px;
+}
+
+.rank-item{
+	position:relative;
+	float:left;
+	display:inline-block;
+	width:20%;
+	height:500px;
+	overflow:hidden;
+}
+
+.rank-bg{
+	position:absolute;
+	background:url(../img/bg-1.jpg) center no-repeat;
+	background-clip:content-box;
+	margin-right:20px;
+	top:0;
+	left:0;
+	right:0;
+	height:560px;
+	z-index:-1;
+}
+
+.rank-title{
+	position:absolute;
+	top:50px;
+	width:200px;
+	font-size:24px;
+	left:50%;
+	margin-left:-100px;
+	text-align:center;
+	color:#fff;
+}
+
+.rank-title::before{
+	content:"巅峰榜";
+	display:block;
+	font-weight:200;
+	font-size:22px;
+}
+
+.rank-line{
+	position:absolute;
+	top:150px;
+	width:36px;
+	height:2px;
+	background:rgba(255,255,255,.8);
+	left:50%;
+	margin-left:-18px;
+}
+
+.rank-nav{
+	position:absolute;
+	top:200px;
+	padding-left:32px;
+}
+
+.rank-nav-item{
+	position:relative;
+	width:150px;
+	padding-left:20px;
+	margin-bottom:20px;
+	color:#fff;
+
+}
+	.rank-number{
+		position:absolute;
+		left:0;
+	}
+	.rank-text{
+		padding-bottom:8px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+
+	}
+
+
+.nice{
+	width: 200px;
+	height: 200px;
+	background: black;
+}
+
+
+/*M V*/
+.MV{
+	min-width:900px;
+	max-width:1200px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+
+.MV-box{
+	overflow:hidden;
+}
+.MV-inner{
+	width:1000%;
+	position:relative;
+}
+.MV-list{
+	width:10%;
+	position:relative;
+	display:inline-block;
+}
+
+
+.MV-style{
+	padding-top:60%;
+}
+.MV-p-style{
+	padding-top:6px;
+}
