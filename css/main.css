@@ -134,14 +134,14 @@
 /*第一屏 歌单推荐*/
 .screen2{
 	position:relative;
-	background:#f6f6f6;
+	background:linear-gradient(#f1f1f1,#fff);
 }
 
 .songCmd{
 	min-width:900px;
 	max-width:1200px;
 	margin:auto;
-	padding-bottom:20px;
+	padding-bottom:40px;
 }
 
 .songCmd-nav{
@@ -168,27 +168,42 @@
 
 
 /*新歌首发*/
+.screen3{
+	background:linear-gradient(#f1f1f1,#fff);
+
+}
 .newSong{
 	min-width:900px;
 	max-width:1200px;
 	margin:0 auto;
-	padding-bottom:20px;
-	background:green;
+	padding-bottom:40px;
+}
+
+.style-title{
+	padding:20px 0;
+
 }
 
 .newSong-other{
 	position:relative;
 	align-items:center;
+	margin-bottom:50px;
 }
+	.newSong-item{
+		padding:0 24px;
+	}
 
 .newSong-playAll{
 	position:absolute;
 	left:0;
 	display:inline-block;
 	float:left;
-	border:1px solid black;
+	border:1px solid rgba(0,0,0,.3);
 	padding:10px 15px;
 	top:-10px;
+}
+.newSong-playAll:hover{
+	background:#eee;
 }
 
 .newSong-box{
@@ -201,17 +216,23 @@
 	display:inline-block;
 	width:10%;
 }
+.style-font{
+	margin-top:30px;
+}
 
 
 
 
 /*精彩推荐*/
+.screen4{
+	background:linear-gradient(#f1f1f1,#fff);
+}
+
 .wonderful{
 	min-width:900px;
 	max-width:1200px;
 	margin:0 auto;
-	padding-bottom:20px;
-	background:#999;
+	padding-bottom:40px;
 }
 
 .wonderful-box{
@@ -236,18 +257,28 @@
 
 
 /*新碟首发*/
+.screen5{
+	background:linear-gradient(#f1f1f1,#fff);
+}
+
 .newCD{
 	min-width:900px;
 	max-width:1200px;
 	margin:0 auto;
 	padding-bottom:20px;
-	background:#829;
+}
+
+.newCD-item{
+	padding:0 20px;
 }
 
 .newCD-more{
 	position:relative;
 	display:inline-block;
 	float:right;
+}
+.newCD-more:hover{
+	color:#31c27c;
 }
 
 .newCD-box{
@@ -271,12 +302,17 @@
 
 
 /*排行榜*/
+.screen6{
+	background:linear-gradient(#f1f1f1,#fff);
+}
+
 .rank{
 	min-width:900px;
 	max-width:1200px;
 	margin:0 auto;
 	position:relative;
 	height:660px;
+		
 }
 
 .rank-more{
@@ -286,7 +322,7 @@
 }
 
 .rank-box{
-	position:relative;
+	
 }
 
 .rank-list{
@@ -300,6 +336,7 @@
 	width:20%;
 	height:520px;
 	overflow:hidden;
+	z-index:3;
 }
 
 .rank-bg{
@@ -377,6 +414,10 @@
 
 
 /*M V*/
+.screen7{
+	background:linear-gradient(#f1f1f1,#fff);
+}
+
 .MV{
 	min-width:900px;
 	max-width:1200px;
