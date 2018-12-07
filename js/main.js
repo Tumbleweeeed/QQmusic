@@ -16,12 +16,13 @@ var i = 0;
 arrowRight.onclick = function(){
 	
 	++i;
-	if(i==4){
-		i = 0;
+	if(i==3){
+		songCmdList.style.transform = 'none';
+		
+	}else{
+		var j = '-'+i*10+'%';
+		console.log(j);
+		songCmdList.style.transform="translateX("+j+")";
+
 	}
-	var j = '-'+i*10+'%';
-	console.log(j);
-	songCmdList.style.transform="translateX("+j+")";
-	
-	console.log(i);
 }
